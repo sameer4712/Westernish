@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "@/components/customCursor";
 
 export const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
           ${poppins.variable}
         `}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>

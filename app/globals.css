@@ -45,3 +45,25 @@ html {
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  border: 2px solid #e94ce3;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 120ms cubic-bezier(.2,.9,.2,1);
+  mix-blend-mode: difference;
+}
+
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: translate(-50%, -50%) scale(1.6);
+}
