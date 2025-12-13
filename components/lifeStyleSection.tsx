@@ -37,7 +37,7 @@ export const LifestyleSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center ${
+            className={`grid grid-cols-1 lg:grid-cols-2 lg:gap-14 items-center ${
               index % 2 === 1 ? "lg:grid-flow-dense" : ""
             }`}
           >
@@ -55,11 +55,15 @@ export const LifestyleSections = () => {
                 {section.tag}
               </span>
 
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-5 leading-tight tracking-tighter">
+              <h3
+                className="text-2xl sm:text-4xl lg:text-5xl font-black mb-5 leading-tight tracking-tighter
+  bg-linear-to-r from-[#C47BE4]  [#D78FEE] to-white
+  bg-clip-text text-transparent"
+              >
                 {section.title}
               </h3>
 
-              <p className="text-gray-600 leading-relaxed mb-7 text-base sm:text-lg max-w-xl mx-auto lg:mx-0">
+              <p className="text-amber-50 leading-relaxed  text-[1.2rem] max-w-xl mx-auto lg:mx-0">
                 {section.description}
               </p>
 

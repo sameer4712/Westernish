@@ -37,7 +37,7 @@ export const FeaturedProducts = () => {
         {/* HEADER */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter">
-            STREET READY FAVOURITES
+            STREET READY <span className="text-[#C47BE4]">FAVOURITES</span>
           </h2>
           <button className="text-sm font-bold underline underline-offset-4 hover:no-underline self-start sm:self-auto">
             Browse All →

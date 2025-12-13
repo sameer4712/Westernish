@@ -20,15 +20,15 @@ export const HeroGrid = () => {
             {/* Heading + Main Image */}
             <div>
               <h1 className="
-                text-4xl 
-                sm:text-5xl 
+                text-white
+                text-[2.5rem]
                 lg:text-7xl 
                 font-black 
                 leading-tight 
                 mb-6 
                 tracking-tighter
               ">
-                MORE EXPERIENCES
+                MORE <span className="bg-linear-to-r from-[#C47BE4] [#D78FEE] to-white bg-clip-text text-transparent">EXPERIENCES</span>
               </h1>
 
               <div className="relative group overflow-hidden rounded-xl">
@@ -48,7 +48,7 @@ export const HeroGrid = () => {
                 />
 
                 <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 to-transparent p-4 sm:p-6">
-                  <p className="text-white text-sm sm:text-base leading-relaxed">
+                  <p className="text-white sm:text-[1.2rem] leading-relaxed">
                     Experience the thrill of adventure with our premium outdoor
                     collection designed for those who dare to explore.
                   </p>
@@ -60,7 +60,7 @@ export const HeroGrid = () => {
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="/wall.jpeg"
+                  src="/soso.jpg"
                   alt="Fashion street"
                   className="
                     w-full 
@@ -108,17 +108,15 @@ export const HeroGrid = () => {
               "
             />
 
-            <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20">
               <h2 className="
-                text-4xl 
-                sm:text-6xl 
-                lg:text-8xl 
+                text-8xl 
                 font-black 
                 text-white 
                 tracking-tighter 
                 text-center
               ">
-                YOUR WAY
+                YOUR <span className="bg-linear-to-r from-[#C47BE4] [#D78FEE] to-white bg-clip-text text-transparent">WAY</span>
               </h2>
             </div>
           </div>

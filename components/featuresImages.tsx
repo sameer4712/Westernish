@@ -9,7 +9,7 @@ export const FashionRevolution = () => {
           {/* LEFT - IMAGE */}
           <div className="relative flex justify-center lg:block">
             {/* Decorative Circle */}
-            <div className="hidden sm:block absolute -top-6 -left-6 sm:-top-10 sm:-left-10 w-24 sm:w-32 h-24 sm:h-32 border-2 border-black rounded-full opacity-20"></div>
+            <div className="hidden sm:block absolute -top-6 -left-6 sm:-top-10 sm:-left-10 w-24 sm:w-32 h-24 sm:h-32 border-4 border-[#C47BE4] rounded-full opacity-20"></div>
 
             <img
               src="/lifestyle.jpeg"
@@ -49,7 +49,7 @@ export const FashionRevolution = () => {
               leading-tight tracking-tighter
             ">
               INTRODUCING <br />
-              FASHION <span className="font-light">REVOLUTION</span>
+              FASHION <span className="font-light text-[#C47BE4]">REVOLUTION</span>
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-5 text-base sm:text-lg">

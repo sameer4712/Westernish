@@ -6,6 +6,11 @@ export default function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // ❌ Disable on small screens & touch devices
+    if (window.innerWidth < 1024 || "ontouchstart" in window) {
+      return;
+    }
+
     const cursor = cursorRef.current;
     if (!cursor) return;
 
